@@ -42,8 +42,7 @@ namespace MedicalCenter.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Display(Name = "Email"), Required(ErrorMessage = "Email Required"), DataType(DataType.EmailAddress)]
             public string Email { get; set; }
 
             [Required]

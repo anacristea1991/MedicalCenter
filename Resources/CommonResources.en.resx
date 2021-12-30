@@ -120,6 +120,12 @@
   <data name="Dashboard" xml:space="preserve">
     <value>My account</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Email Required" xml:space="preserve">
+    <value>A valid email is required</value>
+  </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>Hello {0}!</value>
   </data>

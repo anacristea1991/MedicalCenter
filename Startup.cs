@@ -16,6 +16,8 @@ using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 using MedicalCenter.Services;
+using System.Reflection;
+using MedicalCenter.Resources;
 
 namespace MedicalCenter
 {
@@ -32,7 +34,14 @@ namespace MedicalCenter
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-            services.AddMvc().AddViewLocalization();
+            services.AddMvc().AddViewLocalization().AddDataAnnotationsLocalization(options =>
+            {
+                options.DataAnnotationLocalizerProvider = (type, factory) =>
+                {
+                    var assemblyName = new AssemblyName(typeof(CommonResources).GetTypeInfo().Assembly.FullName);
+                    return factory.Create(nameof(CommonResources), assemblyName.Name);
+                };
+            }); 
             services.AddSingleton<CommonLocalizationService>();
             services.AddLocalization();
             services.Configure<RequestLocalizationOptions>(options =>
