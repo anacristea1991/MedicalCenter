@@ -117,8 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Culture" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="CultureParent" xml:space="preserve">
+    <value>Culture Parent</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Monnaie</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Mon compte</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>E-Mail</value>
@@ -141,10 +153,16 @@
   <data name="MedicalCenter" xml:space="preserve">
     <value>Centre médical</value>
   </data>
+  <data name="Number" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
   <data name="Privacy" xml:space="preserve">
     <value>Vie privée</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>S'inscrire</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bienvenu</value>
   </data>
 </root>

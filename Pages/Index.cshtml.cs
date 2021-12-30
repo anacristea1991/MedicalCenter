@@ -19,7 +19,7 @@ namespace MedicalCenter.Pages
 
         public void OnGet()
         {
-
+            _logger.LogInformation("Test App Insights");
         }
     }
 }

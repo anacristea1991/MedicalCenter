@@ -1,41 +1,41 @@
 ﻿@page
+@inject CommonLocalizationService localizer
 @model IndexModel
 @using Microsoft.AspNetCore.Localization
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = localizer.Get("Localisation");
     var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
     var requestCulture = requestCultureFeature.RequestCulture;
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">@localizer.Get("Welcome")</h1>
     <table class="table culture-table">
         <tr>
-            <td style="width:50%;">Culture</td>
-            <td>@requestCulture.Culture.DisplayName {@requestCulture.Culture.Name}</td>
+            <td style="width:50%;">@localizer.Get("Culture")</td>
+<td>@requestCulture.Culture.DisplayName {@requestCulture.Culture.Name}</td>
         </tr>
         <tr>
-            <td>UI Culture</td>
+            <td>UI @localizer.Get("Culture")</td>
             <td>@requestCulture.UICulture.Name</td>
         </tr>
         <tr>
-            <td>UICulture Parent</td>
-            <td>@requestCulture.UICulture.Parent</td>
+            <td>UI @localizer.Get("CultureParent")</td>
+     <td>@requestCulture.UICulture.Parent</td>
         </tr>
         <tr>
-            <td>Date</td>
-            <td>@DateTime.Now.ToLongDateString()</td>
+            <td>@localizer.Get("Date")</td>
+        <td>@DateTime.Now.ToLongDateString()</td>
         </tr>
         <tr>
-            <td>Currency</td>
-            <td>
+            <td>@localizer.Get("Currency")</td>
+        <td>
                 @(12345.00.ToString("c"))
             </td>
         </tr>
         <tr>
-            <td>Number</td>
-            <td>
+            <td>@localizer.Get("Number")</td>
+        <td>
                 @(123.45m.ToString("F2"))
             </td>
         </tr>
