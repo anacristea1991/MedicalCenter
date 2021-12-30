@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Dashboard" xml:space="preserve">
+    <value>My account</value>
+  </data>
+  <data name="HelloMsg" xml:space="preserve">
+    <value>Hello {0}!</value>
+  </data>
   <data name="Localisation" xml:space="preserve">
-    <value>Localisation</value>
+    <value>Home</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MedicalCenter" xml:space="preserve">
+    <value>Medical Center</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
   </data>
 </root>
