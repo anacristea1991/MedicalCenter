@@ -51,11 +51,9 @@ namespace MedicalCenter
                     new CultureInfo("en"),
                     new CultureInfo("de"),
                     new CultureInfo("fr"),
-                    new CultureInfo("es"),
                     new CultureInfo("ru"),
                     new CultureInfo("ja"),
                     new CultureInfo("ar"),
-                    new CultureInfo("zh"),
                     new CultureInfo("en-GB")
                 };
                 options.DefaultRequestCulture = new RequestCulture("en-GB");

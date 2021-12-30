@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Confirm password" xml:space="preserve">
+    <value>Kennwort bestätigen</value>
+  </data>
+  <data name="CreateNewAccount" xml:space="preserve">
+    <value>Ein neues Konto erstellen.</value>
+  </data>
   <data name="Culture" xml:space="preserve">
     <value>Kultur</value>
   </data>
@@ -165,6 +171,9 @@
   <data name="Password" xml:space="preserve">
     <value>Passwort</value>
   </data>
+  <data name="Password Length" xml:space="preserve">
+    <value>Die {0} muss mindestens {2} und maximal {1} Zeichen lang sein.</value>
+  </data>
   <data name="Password Required" xml:space="preserve">
     <value>Ein gültiges Passwort ist erforderlich</value>
   </data>
@@ -182,6 +191,9 @@
   </data>
   <data name="ResendEmail" xml:space="preserve">
     <value>E-Mail-Bestätigung erneut senden</value>
+  </data>
+  <data name="Same Password" xml:space="preserve">
+    <value>Das Kennwort und das Bestätigungskennwort stimmen nicht überein.</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Willkommen</value>

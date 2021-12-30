@@ -45,20 +45,20 @@ namespace MedicalCenter.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "Email Required")]
+            [EmailAddress(ErrorMessage = "Email Required")]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
-            [DataType(DataType.Password)]
+            [Required (ErrorMessage = "Password Required")]
+            [StringLength(100, ErrorMessage = "Password Length", MinimumLength = 6)]
+            [DataType(DataType.Password, ErrorMessage = "Password Required")]
             [Display(Name = "Password")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "Same Password")]
             public string ConfirmPassword { get; set; }
         }
 

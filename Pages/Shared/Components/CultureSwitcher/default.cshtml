@@ -8,7 +8,7 @@
             <option></option>
             @foreach (var culture in Model.SupportedCultures)
             {
-                <option value="@culture.Name" selected="@(Model.CurrentUICulture.Name == culture.Name)">@culture.DisplayName</option>
+                <option value="@culture.Name" selected="@(Model.CurrentUICulture.Name == culture.Name)">@culture.EnglishName</option>
             }
         </select>
     </form>
