@@ -42,11 +42,10 @@ namespace MedicalCenter.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Display(Name = "Email"), Required(ErrorMessage = "Email Required"), DataType(DataType.EmailAddress)]
+            [Display(Name = "Email"), Required(ErrorMessage = "Email Required"), DataType(DataType.EmailAddress, ErrorMessage = "Email Required")]
             public string Email { get; set; }
 
-            [Required]
-            [DataType(DataType.Password)]
+            [Display(Name = "Password"), Required(ErrorMessage = "Password Required"), DataType(DataType.Password, ErrorMessage = "Password Required")]
             public string Password { get; set; }
 
             [Display(Name = "Remember me?")]

@@ -138,8 +138,14 @@
   <data name="Email Required" xml:space="preserve">
     <value>Eine gültige E-Mail ist erforderlich</value>
   </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Passwort vergessen?</value>
+  </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>Hallo {0}!</value>
+  </data>
+  <data name="LocalAccount" xml:space="preserve">
+    <value>Melden Sie sich mit einem lokalen Konto an.</value>
   </data>
   <data name="Localisation" xml:space="preserve">
     <value>Lokalisierung</value>
@@ -156,11 +162,26 @@
   <data name="Number" xml:space="preserve">
     <value>Nummer</value>
   </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="Password Required" xml:space="preserve">
+    <value>Ein gültiges Passwort ist erforderlich</value>
+  </data>
   <data name="Privacy" xml:space="preserve">
     <value>Privatsphäre</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Registrieren</value>
+  </data>
+  <data name="RegisterNewUser" xml:space="preserve">
+    <value>Als neuer Benutzer registrieren</value>
+  </data>
+  <data name="Remember me?" xml:space="preserve">
+    <value>Behalte mich in Erinnerung?</value>
+  </data>
+  <data name="ResendEmail" xml:space="preserve">
+    <value>E-Mail-Bestätigung erneut senden</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Willkommen</value>
