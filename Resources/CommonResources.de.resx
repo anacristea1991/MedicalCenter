@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>Ändern Sie die E-Mail</value>
+  </data>
   <data name="CheckEmail" xml:space="preserve">
     <value>Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen.</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="Confirm password" xml:space="preserve">
     <value>Kennwort bestätigen</value>
+  </data>
+  <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
+    <value>Bestätigungslink zum Ändern der gesendeten E-Mail. Bitte überprüfen Sie Ihre E-Mail.</value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>Ein neues Konto erstellen.</value>
@@ -174,8 +180,14 @@
   <data name="Logout" xml:space="preserve">
     <value>Ausloggen</value>
   </data>
+  <data name="ManageEmail" xml:space="preserve">
+    <value>E-Mail verwalten</value>
+  </data>
   <data name="MedicalCenter" xml:space="preserve">
     <value>Ärztezentrum</value>
+  </data>
+  <data name="NewEmail" xml:space="preserve">
+    <value>Neue e-mail</value>
   </data>
   <data name="Number" xml:space="preserve">
     <value>Nummer</value>
@@ -225,11 +237,17 @@
   <data name="Save" xml:space="preserve">
     <value>Speichern</value>
   </data>
+  <data name="SendVerificationEmail" xml:space="preserve">
+    <value>Senden Sie E-Mail-Verifizierung</value>
+  </data>
   <data name="Submit" xml:space="preserve">
     <value>Absenden</value>
   </data>
   <data name="SuccessfullyLoggedOut" xml:space="preserve">
     <value>Sie haben sich erfolgreich aus der Anwendung ausgeloggt.</value>
+  </data>
+  <data name="UnchangedEmail" xml:space="preserve">
+    <value>Ihre E-Mail ist unverändert.</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Nutzername</value>

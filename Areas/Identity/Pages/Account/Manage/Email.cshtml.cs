@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using MedicalCenter.Services;
 
 namespace MedicalCenter.Areas.Identity.Pages.Account.Manage
 {
@@ -18,19 +19,22 @@ namespace MedicalCenter.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly IEmailSender _emailSender;
+        private readonly CommonLocalizationService _localizer;
 
         public EmailModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            CommonLocalizationService localizer)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
+            _localizer = localizer;
         }
-
+        [Display(Name = "Username")]
         public string Username { get; set; }
-
+        [Display(Name = "Email")]
         public string Email { get; set; }
 
         public bool IsEmailConfirmed { get; set; }
@@ -43,9 +47,9 @@ namespace MedicalCenter.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
-            [Display(Name = "New email")]
+            [Required(ErrorMessage = "Email Required")]
+            [EmailAddress(ErrorMessage = "Email Required")]
+            [Display(Name = "NewEmail")]
             public string NewEmail { get; set; }
         }
 
@@ -104,11 +108,11 @@ namespace MedicalCenter.Areas.Identity.Pages.Account.Manage
                     "Confirm your email",
                     $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                StatusMessage = "Confirmation link to change email sent. Please check your email.";
+                StatusMessage = _localizer.Get("ConfirmationLinkToChangeEmail");
                 return RedirectToPage();
             }
 
-            StatusMessage = "Your email is unchanged.";
+            StatusMessage = _localizer.Get("UnchangedEmail");
             return RedirectToPage();
         }
 
