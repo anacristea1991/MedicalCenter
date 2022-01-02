@@ -1,7 +1,8 @@
 ﻿@page
 @model ConfirmEmailModel
+@inject CommonLocalizationService localizer
 @{
-    ViewData["Title"] = "Confirm email";
+    ViewData["Title"] = localizer.Get("ConfirmEmail");
 }
 
 <h1>@ViewData["Title"]</h1>

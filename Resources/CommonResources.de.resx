@@ -138,6 +138,9 @@
   <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
     <value>Bestätigungslink zum Ändern der gesendeten E-Mail. Bitte überprüfen Sie Ihre E-Mail.</value>
   </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Bestätigungs-E-Mail</value>
+  </data>
   <data name="ConfirmNewPassword" xml:space="preserve">
     <value>Neues Passwort bestätigen</value>
   </data>
