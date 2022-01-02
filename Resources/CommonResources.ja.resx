@@ -117,82 +117,185 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>アカウント設定を変更する</value>
+  </data>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>メールアドレスを変更</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>パスワードを変更する</value>
+  </data>
+  <data name="CheckEmail" xml:space="preserve">
+    <value>メールをチェックしてパスワードをリセットしてください。</value>
+  </data>
+  <data name="ClickToLogout" xml:space="preserve">
+    <value>ログアウトするには、ここをクリックしてください</value>
+  </data>
   <data name="Confirm password" xml:space="preserve">
-    <value>Confirm password</value>
+    <value>パスワードを認証する</value>
+  </data>
+  <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
+    <value>送信されたメールを変更するための確認リンク。 メールを確認してください。</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Eメール確認</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>新しいパスワードを確認</value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
-    <value>Create a new account.</value>
+    <value>新しいアカウントを作成します。</value>
   </data>
   <data name="Culture" xml:space="preserve">
-    <value>Culture</value>
+    <value>文化</value>
   </data>
   <data name="CultureParent" xml:space="preserve">
-    <value>Culture Parent</value>
+    <value>文化の親</value>
   </data>
   <data name="Currency" xml:space="preserve">
-    <value>Currency</value>
+    <value>通貨</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>現在のパスワード</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
-    <value>My account</value>
+    <value>マイアカウント</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Date</value>
+    <value>日にち</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>消去</value>
+  </data>
+  <data name="DetetingDataWarning" xml:space="preserve">
+    <value>このデータを削除すると、アカウントが完全に削除され、復元できなくなります。</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Email</value>
+    <value>Eメール</value>
   </data>
   <data name="Email Required" xml:space="preserve">
-    <value>A valid email is required</value>
+    <value>有効なメールアドレスが必要です</value>
+  </data>
+  <data name="EnterYourEmail" xml:space="preserve">
+    <value>メールアドレスを入力。</value>
   </data>
   <data name="ForgotPassword" xml:space="preserve">
-    <value>Forgot your password?</value>
+    <value>パスワードをお忘れですか？</value>
+  </data>
+  <data name="ForgotPasswordConfirmation" xml:space="preserve">
+    <value>パスワードの確認を忘れた</value>
   </data>
   <data name="HelloMsg" xml:space="preserve">
-    <value>Hello {0}!</value>
+    <value>こんにちは{0}！</value>
   </data>
   <data name="LocalAccount" xml:space="preserve">
-    <value>Use a local account to log in.</value>
+    <value>ローカルアカウントを使用してログインします。</value>
   </data>
   <data name="Localisation" xml:space="preserve">
-    <value>Home</value>
+    <value>家</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login</value>
+    <value>ログイン</value>
   </data>
   <data name="Logout" xml:space="preserve">
-    <value>Logout</value>
+    <value>ログアウト</value>
+  </data>
+  <data name="ManageEmail" xml:space="preserve">
+    <value>メールを管理する</value>
+  </data>
+  <data name="ManageYourAccount" xml:space="preserve">
+    <value>アカウントを管理する</value>
   </data>
   <data name="MedicalCenter" xml:space="preserve">
-    <value>Medical Center</value>
+    <value>医療センター</value>
+  </data>
+  <data name="NewEmail" xml:space="preserve">
+    <value>新しいメール</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>新しいパスワード</value>
   </data>
   <data name="Number" xml:space="preserve">
-    <value>Number</value>
+    <value>番号</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password</value>
+    <value>パスワード</value>
   </data>
   <data name="Password Length" xml:space="preserve">
-    <value>The {0} must be at least {2} and at max {1} characters long.</value>
+    <value>{0}は、少なくとも{2}文字、最大{1}文字の長さである必要があります。</value>
   </data>
   <data name="Password Required" xml:space="preserve">
-    <value>A valid password is required</value>
+    <value>有効なパスワードが必要です</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>あなたのパスワードは変更されました。</value>
+  </data>
+  <data name="PersonalData" xml:space="preserve">
+    <value>個人データ</value>
+  </data>
+  <data name="PersonalDataMsg" xml:space="preserve">
+    <value>あなたのアカウントにはあなたが私たちに提供した個人データが含まれています。 このページでは、そのデータをダウンロードまたは削除できます。</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="PrivacyPolicyPage" xml:space="preserve">
+    <value>このページを使用して、サイトのプライバシーポリシーの詳細を確認してください。</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>プロフィール</value>
+  </data>
+  <data name="ProfileUpdated" xml:space="preserve">
+    <value>プロファイルが更新されました。</value>
   </data>
   <data name="Register" xml:space="preserve">
-    <value>Register</value>
+    <value>登録</value>
+  </data>
+  <data name="RegisterConfirmation" xml:space="preserve">
+    <value>登録確認</value>
   </data>
   <data name="RegisterNewUser" xml:space="preserve">
-    <value>Register as a new user</value>
+    <value>新規ユーザーとして登録</value>
+  </data>
+  <data name="RegistrationEmailWarning" xml:space="preserve">
+    <value>このアプリには現在、実際のメール送信者が登録されていません。実際のメール送信者を設定する方法については、&lt;ahref = "https://aka.ms/aspaccountconf"&gt;これらのドキュメント&lt;/a&gt;をご覧ください。
+     通常、これはメールで送信されます：&lt;aid="confirm-link"href="呼ばここをクリックしてアカウントを確認&lt;/a&gt;</value>
   </data>
   <data name="Remember me?" xml:space="preserve">
-    <value>Remember me?</value>
+    <value>私を覚えてますか？</value>
   </data>
   <data name="ResendEmail" xml:space="preserve">
-    <value>Resend email confirmation</value>
+    <value>確認メールを再送信する</value>
   </data>
   <data name="Same Password" xml:space="preserve">
-    <value>The password and confirmation password do not match.</value>
+    <value>パスワードと確認パスワードが一致しません。</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存する</value>
+  </data>
+  <data name="SendVerificationEmail" xml:space="preserve">
+    <value>確認メールを送信</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="SuccessfullyLoggedOut" xml:space="preserve">
+    <value>アプリケーションから正常にログアウトしました。</value>
+  </data>
+  <data name="UnchangedEmail" xml:space="preserve">
+    <value>あなたのメールアドレスは変更されていません。</value>
+  </data>
+  <data name="UpdatePassword" xml:space="preserve">
+    <value>パスワードを更新する</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>ユーザー名</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>いらっしゃいませ</value>
   </data>
 </root>

@@ -117,82 +117,185 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>تغيير إعدادات حسابك</value>
+  </data>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>تغيير الايميل</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="CheckEmail" xml:space="preserve">
+    <value>يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك.</value>
+  </data>
+  <data name="ClickToLogout" xml:space="preserve">
+    <value>اضغط هنا للتسجيل الخروج</value>
+  </data>
   <data name="Confirm password" xml:space="preserve">
-    <value>Confirm password</value>
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
+    <value>رابط التأكيد لتغيير البريد الإلكتروني المرسل. من فضلك تفقد بريدك الالكتروني.</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>تأكيد عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور الجديدة</value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
-    <value>Create a new account.</value>
+    <value>انشاء حساب جديد.</value>
   </data>
   <data name="Culture" xml:space="preserve">
-    <value>Culture</value>
+    <value>حضاره</value>
   </data>
   <data name="CultureParent" xml:space="preserve">
-    <value>Culture Parent</value>
+    <value>ثقافة الوالد</value>
   </data>
   <data name="Currency" xml:space="preserve">
-    <value>Currency</value>
+    <value>عملة</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
-    <value>My account</value>
+    <value>حسابي</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Date</value>
+    <value>تاريخ</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="DetetingDataWarning" xml:space="preserve">
+    <value>سيؤدي حذف هذه البيانات إلى إزالة حسابك نهائيًا ، ولا يمكن استرداد ذلك.</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Email</value>
+    <value>بريد الالكتروني</value>
   </data>
   <data name="Email Required" xml:space="preserve">
-    <value>A valid email is required</value>
+    <value>مطلوب بريد إلكتروني صحيح</value>
+  </data>
+  <data name="EnterYourEmail" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني.</value>
   </data>
   <data name="ForgotPassword" xml:space="preserve">
-    <value>Forgot your password?</value>
+    <value>نسيت رقمك السري؟</value>
+  </data>
+  <data name="ForgotPasswordConfirmation" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
   </data>
   <data name="HelloMsg" xml:space="preserve">
-    <value>Hello {0}!</value>
+    <value>مرحبًا {0}!</value>
   </data>
   <data name="LocalAccount" xml:space="preserve">
-    <value>Use a local account to log in.</value>
+    <value>استخدم حساب محلي لتسجيل الدخول.</value>
   </data>
   <data name="Localisation" xml:space="preserve">
-    <value>Home</value>
+    <value>مسكن</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login</value>
+    <value>تسجيل الدخول</value>
   </data>
   <data name="Logout" xml:space="preserve">
-    <value>Logout</value>
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="ManageEmail" xml:space="preserve">
+    <value>إدارة البريد الإلكتروني</value>
+  </data>
+  <data name="ManageYourAccount" xml:space="preserve">
+    <value>إدارة حسابك</value>
   </data>
   <data name="MedicalCenter" xml:space="preserve">
-    <value>Medical Center</value>
+    <value>مركز طبي</value>
+  </data>
+  <data name="NewEmail" xml:space="preserve">
+    <value>بريد إلكتروني جديد</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>كلمة السر الجديدة</value>
   </data>
   <data name="Number" xml:space="preserve">
-    <value>Number</value>
+    <value>عدد</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password</value>
+    <value>كلمة المرور</value>
   </data>
   <data name="Password Length" xml:space="preserve">
-    <value>The {0} must be at least {2} and at max {1} characters long.</value>
+    <value>يجب أن يكون {0} على الأقل {2} والحد الأقصى {1} من الأحرف.</value>
   </data>
   <data name="Password Required" xml:space="preserve">
-    <value>A valid password is required</value>
+    <value>مطلوب كلمة مرور صالحة</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>تم تغيير كلمة السر الخاصة بك.</value>
+  </data>
+  <data name="PersonalData" xml:space="preserve">
+    <value>بيانات شخصية</value>
+  </data>
+  <data name="PersonalDataMsg" xml:space="preserve">
+    <value>يحتوي حسابك على بيانات شخصية قدمتها لنا. تسمح لك هذه الصفحة بتنزيل هذه البيانات أو حذفها.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم التليفون</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="PrivacyPolicyPage" xml:space="preserve">
+    <value>استخدم هذه الصفحة لتفاصيل سياسة الخصوصية الخاصة بموقعك.</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="ProfileUpdated" xml:space="preserve">
+    <value>تم تحديث ملفك الشخصي.</value>
   </data>
   <data name="Register" xml:space="preserve">
-    <value>Register</value>
+    <value>يسجل</value>
+  </data>
+  <data name="RegisterConfirmation" xml:space="preserve">
+    <value>تأكيد التسجيل</value>
   </data>
   <data name="RegisterNewUser" xml:space="preserve">
-    <value>Register as a new user</value>
+    <value>سجل كمستخدم جديد</value>
+  </data>
+  <data name="RegistrationEmailWarning" xml:space="preserve">
+    <value>لا يحتوي هذا التطبيق حاليًا على مرسل بريد إلكتروني حقيقي مسجل ، راجع &lt;a href="https://aka.ms/aspaccountconf"&gt; هذه المستندات &lt;/a&gt; للتعرف على كيفية تكوين مرسل بريد إلكتروني حقيقي.
+     عادةً ما يتم إرسال هذا عبر البريد الإلكتروني: &lt;a id="confirm-link" href="{0}"&gt; انقر هنا لتأكيد حسابك &lt;/a&gt;</value>
   </data>
   <data name="Remember me?" xml:space="preserve">
-    <value>Remember me?</value>
+    <value>تذكرنى؟</value>
   </data>
   <data name="ResendEmail" xml:space="preserve">
-    <value>Resend email confirmation</value>
+    <value>إعادة إرسال تأكيد البريد الإلكتروني</value>
   </data>
   <data name="Same Password" xml:space="preserve">
-    <value>The password and confirmation password do not match.</value>
+    <value>كلمة المرور وكلمة المرور التأكيدية غير متطابقتين.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>يحفظ</value>
+  </data>
+  <data name="SendVerificationEmail" xml:space="preserve">
+    <value>ارسل ايميل التفعيل</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="SuccessfullyLoggedOut" xml:space="preserve">
+    <value>لقد قمت بتسجيل الخروج بنجاح من التطبيق.</value>
+  </data>
+  <data name="UnchangedEmail" xml:space="preserve">
+    <value>بريدك الإلكتروني لم يتغير.</value>
+  </data>
+  <data name="UpdatePassword" xml:space="preserve">
+    <value>تطوير كلمة السر</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>مرحبا</value>
   </data>
 </root>
