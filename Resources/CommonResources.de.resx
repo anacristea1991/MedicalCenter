@@ -189,6 +189,9 @@
   <data name="Password Required" xml:space="preserve">
     <value>Ein gültiges Passwort ist erforderlich</value>
   </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
   <data name="Privacy" xml:space="preserve">
     <value>Privatsphäre</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="PrivacyPolicyPage" xml:space="preserve">
     <value>Verwenden Sie diese Seite, um die Datenschutzrichtlinien Ihrer Website zu erläutern.</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="ProfileUpdated" xml:space="preserve">
+    <value>Ihr Profil wurde aktualisiert.</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Registrieren</value>
@@ -213,11 +222,17 @@
   <data name="Same Password" xml:space="preserve">
     <value>Das Kennwort und das Bestätigungskennwort stimmen nicht überein.</value>
   </data>
+  <data name="Save" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
   <data name="Submit" xml:space="preserve">
     <value>Absenden</value>
   </data>
   <data name="SuccessfullyLoggedOut" xml:space="preserve">
     <value>Sie haben sich erfolgreich aus der Anwendung ausgeloggt.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nutzername</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Willkommen</value>
