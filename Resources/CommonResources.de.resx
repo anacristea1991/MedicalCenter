@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CheckEmail" xml:space="preserve">
+    <value>Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen.</value>
+  </data>
   <data name="ClickToLogout" xml:space="preserve">
     <value>Klicken Sie hier, um sich auszuloggen</value>
   </data>
@@ -147,8 +150,14 @@
   <data name="Email Required" xml:space="preserve">
     <value>Eine gültige E-Mail ist erforderlich</value>
   </data>
+  <data name="EnterYourEmail" xml:space="preserve">
+    <value>Geben sie ihre E-Mail Adresse ein.</value>
+  </data>
   <data name="ForgotPassword" xml:space="preserve">
     <value>Passwort vergessen?</value>
+  </data>
+  <data name="ForgotPasswordConfirmation" xml:space="preserve">
+    <value>Passwortbestätigung vergessen</value>
   </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>Hallo {0}!</value>
@@ -197,6 +206,9 @@
   </data>
   <data name="Same Password" xml:space="preserve">
     <value>Das Kennwort und das Bestätigungskennwort stimmen nicht überein.</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Absenden</value>
   </data>
   <data name="SuccessfullyLoggedOut" xml:space="preserve">
     <value>Sie haben sich erfolgreich aus der Anwendung ausgeloggt.</value>
