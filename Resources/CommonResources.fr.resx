@@ -120,6 +120,9 @@
   <data name="ChangeEmail" xml:space="preserve">
     <value>Changer l'e-mail</value>
   </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Changer le mot de passe</value>
+  </data>
   <data name="CheckEmail" xml:space="preserve">
     <value>Veuillez vérifier votre courrier électronique pour réinitialiser votre mot de passe.</value>
   </data>
@@ -132,6 +135,9 @@
   <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
     <value>Lien de confirmation pour modifier l'e-mail envoyé. Merci de consulter vos emails.</value>
   </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Confirmer le nouveau mot de passe</value>
+  </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>Créer un nouveau compte.</value>
   </data>
@@ -143,6 +149,9 @@
   </data>
   <data name="Currency" xml:space="preserve">
     <value>Monnaie</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Mot de passe actuel</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Mon compte</value>
@@ -189,6 +198,9 @@
   <data name="NewEmail" xml:space="preserve">
     <value>Nouvel e-mail</value>
   </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nouveau mot de passe</value>
+  </data>
   <data name="Number" xml:space="preserve">
     <value>Nombre</value>
   </data>
@@ -200,6 +212,12 @@
   </data>
   <data name="Password Required" xml:space="preserve">
     <value>Un mot de passe valide est requis</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Votre mot de passe a été changé.</value>
+  </data>
+  <data name="PersonalData" xml:space="preserve">
+    <value>Données personnelles</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Numéro de téléphone</value>
@@ -248,6 +266,9 @@
   </data>
   <data name="UnchangedEmail" xml:space="preserve">
     <value>Votre email est inchangé.</value>
+  </data>
+  <data name="UpdatePassword" xml:space="preserve">
+    <value>Mettre à jour le mot de passe</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Nom d'utilisateur</value>

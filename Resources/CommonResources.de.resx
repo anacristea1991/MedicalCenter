@@ -120,6 +120,9 @@
   <data name="ChangeEmail" xml:space="preserve">
     <value>Ändern Sie die E-Mail</value>
   </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Ändere das Passwort</value>
+  </data>
   <data name="CheckEmail" xml:space="preserve">
     <value>Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen.</value>
   </data>
@@ -132,6 +135,9 @@
   <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
     <value>Bestätigungslink zum Ändern der gesendeten E-Mail. Bitte überprüfen Sie Ihre E-Mail.</value>
   </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Neues Passwort bestätigen</value>
+  </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>Ein neues Konto erstellen.</value>
   </data>
@@ -143,6 +149,9 @@
   </data>
   <data name="Currency" xml:space="preserve">
     <value>Währung</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Aktuelles Passwort</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Mein Konto</value>
@@ -189,6 +198,9 @@
   <data name="NewEmail" xml:space="preserve">
     <value>Neue e-mail</value>
   </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Neues Passwort</value>
+  </data>
   <data name="Number" xml:space="preserve">
     <value>Nummer</value>
   </data>
@@ -200,6 +212,12 @@
   </data>
   <data name="Password Required" xml:space="preserve">
     <value>Ein gültiges Passwort ist erforderlich</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Ihr Passwort wurde geändert.</value>
+  </data>
+  <data name="PersonalData" xml:space="preserve">
+    <value>Persönliche Daten</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Telefonnummer</value>
@@ -248,6 +266,9 @@
   </data>
   <data name="UnchangedEmail" xml:space="preserve">
     <value>Ihre E-Mail ist unverändert.</value>
+  </data>
+  <data name="UpdatePassword" xml:space="preserve">
+    <value>Passwort erneuern</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Nutzername</value>

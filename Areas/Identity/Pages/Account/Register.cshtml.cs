@@ -56,7 +56,7 @@ namespace MedicalCenter.Areas.Identity.Pages.Account
             [Display(Name = "Password")]
             public string Password { get; set; }
 
-            [DataType(DataType.Password)]
+            [DataType(DataType.Password, ErrorMessage = "Password Required")]
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "Same Password")]
             public string ConfirmPassword { get; set; }

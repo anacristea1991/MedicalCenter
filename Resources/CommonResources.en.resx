@@ -120,6 +120,9 @@
   <data name="ChangeEmail" xml:space="preserve">
     <value>Change Email</value>
   </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
   <data name="CheckEmail" xml:space="preserve">
     <value>Please check your email to reset your password.</value>
   </data>
@@ -132,6 +135,9 @@
   <data name="ConfirmationLinkToChangeEmail" xml:space="preserve">
     <value>Confirmation link to change email sent. Please check your email.</value>
   </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Confirm new password</value>
+  </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>Create a new account.</value>
   </data>
@@ -143,6 +149,9 @@
   </data>
   <data name="Currency" xml:space="preserve">
     <value>Currency</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Current password</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>My account</value>
@@ -189,6 +198,9 @@
   <data name="NewEmail" xml:space="preserve">
     <value>New email</value>
   </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
   <data name="Number" xml:space="preserve">
     <value>Number</value>
   </data>
@@ -200,6 +212,12 @@
   </data>
   <data name="Password Required" xml:space="preserve">
     <value>A valid password is required</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Your password has been changed.</value>
+  </data>
+  <data name="PersonalData" xml:space="preserve">
+    <value>Personal data</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Phone number</value>
@@ -245,6 +263,9 @@
   </data>
   <data name="UnchangedEmail" xml:space="preserve">
     <value>Your email is unchanged.</value>
+  </data>
+  <data name="UpdatePassword" xml:space="preserve">
+    <value>Update password</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Username</value>
