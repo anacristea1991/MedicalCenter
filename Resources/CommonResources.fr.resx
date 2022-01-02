@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>Modifier les paramètres de votre compte</value>
+  </data>
   <data name="ChangeEmail" xml:space="preserve">
     <value>Changer l'e-mail</value>
   </data>
@@ -159,6 +162,12 @@
   <data name="Date" xml:space="preserve">
     <value>Date</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DetetingDataWarning" xml:space="preserve">
+    <value>La suppression de ces données supprimera définitivement votre compte et celui-ci ne pourra pas être récupéré.</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>E-Mail</value>
   </data>
@@ -192,6 +201,9 @@
   <data name="ManageEmail" xml:space="preserve">
     <value>Gérer les e-mails</value>
   </data>
+  <data name="ManageYourAccount" xml:space="preserve">
+    <value>Gérer votre compte</value>
+  </data>
   <data name="MedicalCenter" xml:space="preserve">
     <value>Centre médical</value>
   </data>
@@ -218,6 +230,9 @@
   </data>
   <data name="PersonalData" xml:space="preserve">
     <value>Données personnelles</value>
+  </data>
+  <data name="PersonalDataMsg" xml:space="preserve">
+    <value>Votre compte contient des données personnelles que vous nous avez fournies. Cette page vous permet de télécharger ou de supprimer ces données.</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Numéro de téléphone</value>

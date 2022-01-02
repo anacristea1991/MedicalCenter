@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ChangeAccount" xml:space="preserve">
+    <value>Change your account settings</value>
+  </data>
   <data name="ChangeEmail" xml:space="preserve">
     <value>Change Email</value>
   </data>
@@ -159,6 +162,12 @@
   <data name="Date" xml:space="preserve">
     <value>Date</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DetetingDataWarning" xml:space="preserve">
+    <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
@@ -192,6 +201,9 @@
   <data name="ManageEmail" xml:space="preserve">
     <value>Manage Email</value>
   </data>
+  <data name="ManageYourAccount" xml:space="preserve">
+    <value>Manage your account</value>
+  </data>
   <data name="MedicalCenter" xml:space="preserve">
     <value>Medical Center</value>
   </data>
@@ -218,6 +230,9 @@
   </data>
   <data name="PersonalData" xml:space="preserve">
     <value>Personal data</value>
+  </data>
+  <data name="PersonalDataMsg" xml:space="preserve">
+    <value>Your account contains personal data that you have given us. This page allows you to download or delete that data.</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Phone number</value>
