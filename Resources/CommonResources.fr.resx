@@ -255,8 +255,15 @@
   <data name="Register" xml:space="preserve">
     <value>S'inscrire</value>
   </data>
+  <data name="RegisterConfirmation" xml:space="preserve">
+    <value>Confirmation d'inscription</value>
+  </data>
   <data name="RegisterNewUser" xml:space="preserve">
     <value>Enregistrez-vous comme nouvel utilisateur</value>
+  </data>
+  <data name="RegistrationEmailWarning" xml:space="preserve">
+    <value>Cette application n'a actuellement pas de véritable expéditeur d'e-mail enregistré, consultez &lt;a href="https://aka.ms/aspaccountconf"&gt;ces documents&lt;/a&gt; pour savoir comment configurer un véritable expéditeur d'e-mail.
+     Normalement, cela serait envoyé par e-mail : &lt;a id="confirm-link" href="{0}"&gt;Cliquez ici pour confirmer votre compte&lt;/a&gt;</value>
   </data>
   <data name="Remember me?" xml:space="preserve">
     <value>Souviens-toi de moi?</value>

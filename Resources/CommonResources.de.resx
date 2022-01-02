@@ -255,8 +255,15 @@
   <data name="Register" xml:space="preserve">
     <value>Registrieren</value>
   </data>
+  <data name="RegisterConfirmation" xml:space="preserve">
+    <value>Registrierungsbestätigung</value>
+  </data>
   <data name="RegisterNewUser" xml:space="preserve">
     <value>Als neuer Benutzer registrieren</value>
+  </data>
+  <data name="RegistrationEmailWarning" xml:space="preserve">
+    <value>Für diese App ist derzeit kein echter E-Mail-Absender registriert. In &lt;a href="https://aka.ms/aspaccountconf"&gt;diesen Dokumenten&lt;/a&gt; erfahren Sie, wie Sie einen echten E-Mail-Absender konfigurieren.
+     Normalerweise wird dies per E-Mail gesendet: &lt;a id="confirm-link" href="{0}"&gt;Klicken Sie hier, um Ihr Konto zu bestätigen&lt;/a&gt;</value>
   </data>
   <data name="Remember me?" xml:space="preserve">
     <value>Behalte mich in Erinnerung?</value>
