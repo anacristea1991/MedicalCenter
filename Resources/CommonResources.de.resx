@@ -192,6 +192,12 @@
   <data name="Privacy" xml:space="preserve">
     <value>Privatsphäre</value>
   </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Datenschutz-Bestimmungen</value>
+  </data>
+  <data name="PrivacyPolicyPage" xml:space="preserve">
+    <value>Verwenden Sie diese Seite, um die Datenschutzrichtlinien Ihrer Website zu erläutern.</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Registrieren</value>
   </data>
