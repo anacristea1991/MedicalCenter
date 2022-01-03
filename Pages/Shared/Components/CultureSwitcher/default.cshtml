@@ -3,7 +3,7 @@
     var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
 }
 <div>
-    <form id="culture-switcher" asp-route-returnUrl="@returnUrl" asp-page="./Index">
+    <form id="culture-switcher" asp-route-returnUrl="@returnUrl" asp-area="" asp-page="/Index">
         <select name="culture" id="culture-options">
             <option></option>
             @foreach (var culture in Model.SupportedCultures)
