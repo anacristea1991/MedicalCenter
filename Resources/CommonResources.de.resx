@@ -283,6 +283,9 @@
   <data name="SendVerificationEmail" xml:space="preserve">
     <value>Senden Sie E-Mail-Verifizierung</value>
   </data>
+  <data name="String1" xml:space="preserve">
+    <value>Privatsphäre</value>
+  </data>
   <data name="Submit" xml:space="preserve">
     <value>Absenden</value>
   </data>
