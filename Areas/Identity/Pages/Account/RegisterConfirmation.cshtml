@@ -1,0 +1,20 @@
+﻿@page
+@model RegisterConfirmationModel
+@inject CommonLocalizationService localizer
+@{
+    ViewData["Title"] = localizer.Get("RegisterConfirmation");
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+    <p>@Html.Raw(string.Format(localizer.Get("RegistrationEmailWarning"), Model.EmailConfirmationUrl))</p>
+    }
+    else
+    {
+        <p>
+            Please check your email to confirm your account.
+        </p>
+    }
+}

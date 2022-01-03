@@ -1,0 +1,28 @@
+﻿@page
+@inject CommonLocalizationService localizer
+@model PersonalDataModel
+@{
+    ViewData["Title"] = localizer.Get("PersonalData");
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>@localizer.Get("PersonalDataMsg") </p>
+        <p>
+            <strong>@localizer.Get("DetetingDataWarning")</strong>
+        </p>
+        @*<form id="download-data" asp-page="DownloadPersonalData" method="post" class="form-group">
+                <button class="btn btn-primary" type="submit">Download</button>
+            </form>*@
+        <p>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-secondary">@localizer.Get("Delete")</a>
+</p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

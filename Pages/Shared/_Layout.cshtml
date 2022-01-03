@@ -1,32 +1,54 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Localization
+@using System.Threading
+@inject CommonLocalizationService localizer
+@inject SignInManager<IdentityUser> SignInManager
+@{
+    CultureInfo culture = Thread.CurrentThread.CurrentCulture;
+    bool isArabic = culture.TwoLetterISOLanguageName == "ar";
+    //var requestCultureFeature =HttpContext.Features.Get<IRequestCultureFeature>();
+    //var requestCulture = requestCultureFeature.RequestCulture;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MedicalCenter</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - @localizer.Get("Localisation")</title>
+    @if (isArabic)
+    {
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    }
+    else
+    {
+         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    }
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">MedicalCenter</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">@localizer.Get("MedicalCenter")</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index">@localizer.Get("Dashboard")</a>
+                            </li>
+                        }
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Identity/Account/Manage">Dashboard</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">@localizer.Get("Localisation")</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">@localizer.Get("Privacy")</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                        <li><vc:culture-switcher /></li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -41,7 +63,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - MedicalCenter - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - @localizer.Get("MedicalCenter") - <a asp-area="" asp-page="/Privacy">@localizer.Get("Privacy")</a>
         </div>
     </footer>
 
