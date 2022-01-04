@@ -1,0 +1,55 @@
+﻿@page
+@model MedicalCenter.Pages.Room.IndexModel
+@inject CommonLocalizationService localizer
+@{
+    ViewData["Title"] = localizer.Get("Room")+ localizer.Get("Index");
+}
+
+<h1>@localizer.Get("Index")</h1>
+
+<p>
+    <a asp-page="Create">@localizer.Get("CreateNew")</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Floor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].RoomNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].IsAvailable)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Room)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Floor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @(item.IsAvailable? localizer.Get("Yes"): localizer.Get("No"))
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">@localizer.Get("Edit")</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">@localizer.Get("Details")</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">@localizer.Get("Delete")</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

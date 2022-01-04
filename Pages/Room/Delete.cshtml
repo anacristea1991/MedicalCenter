@@ -1,0 +1,51 @@
+﻿@page
+@model MedicalCenter.Pages.Room.DeleteModel
+@inject CommonLocalizationService localizer
+@{
+    ViewData["Title"] = localizer.Get("Room") + localizer.Get("Delete");
+}
+
+<h1>@localizer.Get("Delete")</h1>
+
+<h3>
+    @localizer.Get("DeleteConfirmation")
+</h3>
+<div>
+    <h4>@localizer.Get("Room")</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.Floor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.Floor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.RoomNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.RoomNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.IsAvailable)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.IsAvailable)
+        </dd>
+    </dl>
+    @if (ViewBag.ErrorDeleteRoom != null)
+    {
+        <span asp-validation-for="Room.Floor" class="text-danger">@ViewBag.ErrorDeleteRoom</span>
+    }
+    <form method="post">
+        <input type="hidden" asp-for="Room.Id" />
+        <input type="submit" value="@localizer.Get("Delete")" class="btn btn-danger" /> |
+        <a asp-page="./Index">@localizer.Get("BackToList")</a>
+    </form>
+</div>

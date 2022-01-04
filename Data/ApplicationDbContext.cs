@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using MedicalCenter.Models;
 
 namespace MedicalCenter.Data
 {
@@ -12,5 +13,7 @@ namespace MedicalCenter.Data
             : base(options)
         {
         }
+        public DbSet<MedicalCenter.Models.Room> Room { get; set; }
+        public DbSet<MedicalCenter.Models.MedicalStaff> MedicalStaff { get; set; }
     }
 }
