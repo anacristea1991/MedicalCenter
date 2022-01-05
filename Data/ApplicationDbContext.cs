@@ -13,6 +13,11 @@ namespace MedicalCenter.Data
             : base(options)
         {
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MedicalStaff>().Ignore(t => t.ConsultationRoomId);
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<MedicalCenter.Models.Room> Room { get; set; }
         public DbSet<MedicalCenter.Models.MedicalStaff> MedicalStaff { get; set; }
     }

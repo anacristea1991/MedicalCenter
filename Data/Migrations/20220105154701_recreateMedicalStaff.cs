@@ -3,32 +3,18 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MedicalCenter.Data.Migrations
 {
-    public partial class medicalstaff : Migration
+    public partial class recreateMedicalStaff : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Room",
+                name: "MedicalStaff",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Floor = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IsAvailable = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Room", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "MedicalStaff",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StartTime = table.Column<TimeSpan>(type: "time", nullable: false),
                     EndTime = table.Column<TimeSpan>(type: "time", nullable: false),
                     Specialisation = table.Column<int>(type: "int", nullable: false),
@@ -41,7 +27,7 @@ namespace MedicalCenter.Data.Migrations
                         name: "FK_MedicalStaff_Room_ConsultationRoomId",
                         column: x => x.ConsultationRoomId,
                         principalTable: "Room",
-                        principalColumn: "MedicalStaffId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -55,9 +41,6 @@ namespace MedicalCenter.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "MedicalStaff");
-
-            migrationBuilder.DropTable(
-                name: "Room");
         }
     }
 }

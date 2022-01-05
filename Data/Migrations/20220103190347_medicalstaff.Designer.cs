@@ -23,7 +23,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("MedicalCenter.Models.MedicalStaff", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("MedicalStaffId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int?>("ConsultationRoomId")
@@ -44,7 +44,7 @@ namespace MedicalCenter.Data.Migrations
                     b.Property<TimeSpan>("StartTime")
                         .HasColumnType("time");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("ConsultationRoomId");
 
@@ -53,7 +53,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("MedicalCenter.Models.Room", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MedicalStaffId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -67,14 +67,14 @@ namespace MedicalCenter.Data.Migrations
                     b.Property<bool>("IsAvailable")
                         .HasColumnType("bit");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.ToTable("Room");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("MedicalStaffId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -89,7 +89,7 @@ namespace MedicalCenter.Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
@@ -101,7 +101,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MedicalStaffId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -116,7 +116,7 @@ namespace MedicalCenter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("RoleId");
 
@@ -125,7 +125,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("MedicalStaffId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")
@@ -175,7 +175,7 @@ namespace MedicalCenter.Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -190,7 +190,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MedicalStaffId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -205,7 +205,7 @@ namespace MedicalCenter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("UserId");
 

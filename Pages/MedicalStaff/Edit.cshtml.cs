@@ -23,19 +23,28 @@ namespace MedicalCenter.Pages.MedicalStaff
         [BindProperty]
         public MedicalCenter.Models.MedicalStaff MedicalStaff { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            MedicalStaff = await _context.MedicalStaff.FirstOrDefaultAsync(m => m.Id == id);
+            MedicalStaff = await _context.MedicalStaff.Include(m=>m.ConsultationRoom).FirstOrDefaultAsync(m => m.Id == id);
 
             if (MedicalStaff == null)
             {
                 return NotFound();
             }
+            var roles = from Specialisation s in Enum.GetValues(typeof(Specialisation))
+                        select new { ID = (int)s, Name = s.ToString() };
+            ViewData["Specialisation"] = new SelectList(roles, "ID", "Name");
+
+            var rooms = from MedicalCenter.Models.Room r in _context.Room.Where(r => r.IsAvailable).ToList()
+                        select new { ID = (int)r.Id, Name = string.Format("{0}.{1}", r.Floor, r.RoomNumber) };
+            ViewData["Room"] = new SelectList(rooms, "ID", "Name");
+            MedicalStaff.ConsultationRoomId = MedicalStaff.ConsultationRoom.Id;
+
             return Page();
         }
 
@@ -45,9 +54,19 @@ namespace MedicalCenter.Pages.MedicalStaff
         {
             if (!ModelState.IsValid)
             {
+                var roles = from Specialisation s in Enum.GetValues(typeof(Specialisation))
+                            select new { ID = (int)s, Name = s.ToString() };
+                ViewData["Specialisation"] = new SelectList(roles, "ID", "Name");
+
+                var rooms = from MedicalCenter.Models.Room r in _context.Room.Where(r => r.IsAvailable).ToList()
+                            select new { ID = (int)r.Id, Name = string.Format("{0}.{1}", r.Floor, r.RoomNumber) };
+                ViewData["Room"] = new SelectList(rooms, "ID", "Name");
+                MedicalStaff.ConsultationRoomId = MedicalStaff.ConsultationRoom.Id;
+
                 return Page();
             }
-
+            var room = _context.Room.FirstOrDefault(r => r.Id == MedicalStaff.ConsultationRoomId);
+            MedicalStaff.ConsultationRoom = room;
             _context.Attach(MedicalStaff).State = EntityState.Modified;
 
             try
@@ -69,7 +88,7 @@ namespace MedicalCenter.Pages.MedicalStaff
             return RedirectToPage("./Index");
         }
 
-        private bool MedicalStaffExists(string id)
+        private bool MedicalStaffExists(int id)
         {
             return _context.MedicalStaff.Any(e => e.Id == id);
         }

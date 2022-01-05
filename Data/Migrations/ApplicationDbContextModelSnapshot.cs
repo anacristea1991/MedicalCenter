@@ -21,19 +21,23 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("MedicalCenter.Models.MedicalStaff", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("ConsultationRoomId")
+                    b.Property<int?>("ConsultationRoomId1")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("EndTime")
                         .HasColumnType("time");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Specialisation")
@@ -44,7 +48,7 @@ namespace MedicalCenter.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ConsultationRoomId");
+                    b.HasIndex("ConsultationRoomId1");
 
                     b.ToTable("MedicalStaff");
                 });
@@ -277,7 +281,7 @@ namespace MedicalCenter.Data.Migrations
                 {
                     b.HasOne("MedicalCenter.Models.Room", "ConsultationRoom")
                         .WithMany()
-                        .HasForeignKey("ConsultationRoomId");
+                        .HasForeignKey("ConsultationRoomId1");
 
                     b.Navigation("ConsultationRoom");
                 });

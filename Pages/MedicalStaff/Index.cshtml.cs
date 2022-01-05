@@ -23,7 +23,7 @@ namespace MedicalCenter.Pages.MedicalStaff
 
         public async Task OnGetAsync()
         {
-            MedicalStaff = await _context.MedicalStaff.ToListAsync();
+            MedicalStaff = await _context.MedicalStaff.Include(m => m.ConsultationRoom).ToListAsync();
         }
     }
 }

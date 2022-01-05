@@ -23,7 +23,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("MedicalStaffId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -38,7 +38,7 @@ namespace MedicalCenter.Data.Migrations
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
@@ -50,7 +50,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MedicalStaffId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -65,7 +65,7 @@ namespace MedicalCenter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("RoleId");
 
@@ -74,7 +74,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("MedicalStaffId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")
@@ -124,7 +124,7 @@ namespace MedicalCenter.Data.Migrations
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -139,7 +139,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("MedicalStaffId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -154,7 +154,7 @@ namespace MedicalCenter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MedicalStaffId");
 
                     b.HasIndex("UserId");
 

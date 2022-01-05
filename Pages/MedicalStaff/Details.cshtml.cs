@@ -21,14 +21,14 @@ namespace MedicalCenter.Pages.MedicalStaff
 
         public MedicalCenter.Models.MedicalStaff MedicalStaff { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string id)
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            MedicalStaff = await _context.MedicalStaff.FirstOrDefaultAsync(m => m.Id == id);
+            MedicalStaff = await _context.MedicalStaff.Include(m=>m.ConsultationRoom).FirstOrDefaultAsync(m => m.Id == id);
 
             if (MedicalStaff == null)
             {

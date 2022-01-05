@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MedicalCenter.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220104141750_AddRoomNumber")]
-    partial class AddRoomNumber
+    [Migration("20220105185058_ModelChanges")]
+    partial class ModelChanges
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,19 +23,23 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("MedicalCenter.Models.MedicalStaff", b =>
                 {
-                    b.Property<string>("MedicalStaffId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("ConsultationRoomId")
+                    b.Property<int?>("ConsultationRoomId1")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("EndTime")
                         .HasColumnType("time");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Specialisation")
@@ -44,16 +48,16 @@ namespace MedicalCenter.Data.Migrations
                     b.Property<TimeSpan>("StartTime")
                         .HasColumnType("time");
 
-                    b.HasKey("MedicalStaffId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("ConsultationRoomId");
+                    b.HasIndex("ConsultationRoomId1");
 
                     b.ToTable("MedicalStaff");
                 });
 
             modelBuilder.Entity("MedicalCenter.Models.Room", b =>
                 {
-                    b.Property<int>("MedicalStaffId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -70,14 +74,14 @@ namespace MedicalCenter.Data.Migrations
                     b.Property<int>("RoomNumber")
                         .HasColumnType("int");
 
-                    b.HasKey("MedicalStaffId");
+                    b.HasKey("Id");
 
                     b.ToTable("Room");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
-                    b.Property<string>("MedicalStaffId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -92,7 +96,7 @@ namespace MedicalCenter.Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.HasKey("MedicalStaffId");
+                    b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
@@ -104,7 +108,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.Property<int>("MedicalStaffId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -119,7 +123,7 @@ namespace MedicalCenter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("MedicalStaffId");
+                    b.HasKey("Id");
 
                     b.HasIndex("RoleId");
 
@@ -128,7 +132,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
-                    b.Property<string>("MedicalStaffId")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")
@@ -178,7 +182,7 @@ namespace MedicalCenter.Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.HasKey("MedicalStaffId");
+                    b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -193,7 +197,7 @@ namespace MedicalCenter.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.Property<int>("MedicalStaffId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -208,7 +212,7 @@ namespace MedicalCenter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("MedicalStaffId");
+                    b.HasKey("Id");
 
                     b.HasIndex("UserId");
 
@@ -279,7 +283,7 @@ namespace MedicalCenter.Data.Migrations
                 {
                     b.HasOne("MedicalCenter.Models.Room", "ConsultationRoom")
                         .WithMany()
-                        .HasForeignKey("ConsultationRoomId");
+                        .HasForeignKey("ConsultationRoomId1");
 
                     b.Navigation("ConsultationRoom");
                 });
