@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AssignedDoctor" xml:space="preserve">
+    <value>Assigned doctor</value>
+  </data>
   <data name="BackToList" xml:space="preserve">
     <value>Back to List</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>BirthDate</value>
   </data>
   <data name="ChangeAccount" xml:space="preserve">
     <value>Измените настройки своей учетной записи</value>
@@ -131,6 +137,9 @@
   </data>
   <data name="CheckEmail" xml:space="preserve">
     <value>Пожалуйста, проверьте свою электронную почту, чтобы сбросить пароль.</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
   </data>
   <data name="ClickToLogout" xml:space="preserve">
     <value>Нажмите здесь, чтобы выйти</value>
@@ -219,6 +228,9 @@
   <data name="ForgotPasswordConfirmation" xml:space="preserve">
     <value>Подтверждение забытого пароля</value>
   </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>Здравствуйте, {0}!</value>
   </data>
@@ -267,6 +279,9 @@
   <data name="Number" xml:space="preserve">
     <value>Число</value>
   </data>
+  <data name="Pacient" xml:space="preserve">
+    <value>Pacient</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
   </data>
@@ -284,6 +299,9 @@
   </data>
   <data name="PersonalDataMsg" xml:space="preserve">
     <value>Ваша учетная запись содержит личные данные, которые вы нам предоставили. Эта страница позволяет вам загружать или удалять эти данные.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone number</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Телефонный номер</value>
@@ -348,6 +366,12 @@
   </data>
   <data name="StartTime" xml:space="preserve">
     <value>Start Time</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="StreetNumber" xml:space="preserve">
+    <value>Street number</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>Представлять на рассмотрение</value>

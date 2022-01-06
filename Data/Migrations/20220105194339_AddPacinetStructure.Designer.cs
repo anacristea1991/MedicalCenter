@@ -4,53 +4,22 @@ using MedicalCenter.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MedicalCenter.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220105194339_AddPacinetStructure")]
+    partial class AddPacinetStructure
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("MedicalCenter.Models.City", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("CountyId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CountyId");
-
-                    b.ToTable("City");
-                });
-
-            modelBuilder.Entity("MedicalCenter.Models.County", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("County");
-                });
 
             modelBuilder.Entity("MedicalCenter.Models.MedicalStaff", b =>
                 {
@@ -84,55 +53,6 @@ namespace MedicalCenter.Data.Migrations
                     b.HasIndex("ConsultationRoomId1");
 
                     b.ToTable("MedicalStaff");
-                });
-
-            modelBuilder.Entity("MedicalCenter.Models.Patient", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("AssignedDoctorId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CNP")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("CityId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Gender")
-                        .HasColumnType("int");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Street")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StreetNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AssignedDoctorId");
-
-                    b.HasIndex("CityId");
-
-                    b.ToTable("Patient");
                 });
 
             modelBuilder.Entity("MedicalCenter.Models.Room", b =>
@@ -359,15 +279,6 @@ namespace MedicalCenter.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("MedicalCenter.Models.City", b =>
-                {
-                    b.HasOne("MedicalCenter.Models.County", "County")
-                        .WithMany()
-                        .HasForeignKey("CountyId");
-
-                    b.Navigation("County");
-                });
-
             modelBuilder.Entity("MedicalCenter.Models.MedicalStaff", b =>
                 {
                     b.HasOne("MedicalCenter.Models.Room", "ConsultationRoom")
@@ -375,21 +286,6 @@ namespace MedicalCenter.Data.Migrations
                         .HasForeignKey("ConsultationRoomId1");
 
                     b.Navigation("ConsultationRoom");
-                });
-
-            modelBuilder.Entity("MedicalCenter.Models.Patient", b =>
-                {
-                    b.HasOne("MedicalCenter.Models.MedicalStaff", "AssignedDoctor")
-                        .WithMany()
-                        .HasForeignKey("AssignedDoctorId");
-
-                    b.HasOne("MedicalCenter.Models.City", "City")
-                        .WithMany()
-                        .HasForeignKey("CityId");
-
-                    b.Navigation("AssignedDoctor");
-
-                    b.Navigation("City");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

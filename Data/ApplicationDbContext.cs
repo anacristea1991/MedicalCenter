@@ -20,5 +20,6 @@ namespace MedicalCenter.Data
         }
         public DbSet<MedicalCenter.Models.Room> Room { get; set; }
         public DbSet<MedicalCenter.Models.MedicalStaff> MedicalStaff { get; set; }
+        public DbSet<MedicalCenter.Models.Patient> Patient { get; set; }
     }
 }
