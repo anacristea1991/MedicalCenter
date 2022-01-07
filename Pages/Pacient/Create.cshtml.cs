@@ -21,6 +21,9 @@ namespace MedicalCenter.Pages.Pacient
 
         public IActionResult OnGet()
         {
+            var counties = from MedicalCenter.Models.County r in _context..ToList()
+                        select new { ID = (int)r.Id, Name = string.Format("{0}.{1}", r.Floor, r.RoomNumber) };
+            ViewData["County"] = new SelectList(counties, "ID", "Name");
             return Page();
         }
 

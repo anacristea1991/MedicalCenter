@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AssignedDoctor" xml:space="preserve">
-    <value>Assigned doctor</value>
+    <value>Zugewiesener Arzt</value>
   </data>
   <data name="BackToList" xml:space="preserve">
-    <value>Back to List</value>
+    <value>Zurück zur Liste</value>
   </data>
   <data name="BirthDate" xml:space="preserve">
-    <value>BirthDate</value>
+    <value>Geburtsdatum</value>
   </data>
   <data name="ChangeAccount" xml:space="preserve">
     <value>Ändern Sie Ihre Kontoeinstellungen</value>
@@ -139,7 +139,7 @@
     <value>Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen.</value>
   </data>
   <data name="City" xml:space="preserve">
-    <value>City</value>
+    <value>Stadt</value>
   </data>
   <data name="ClickToLogout" xml:space="preserve">
     <value>Klicken Sie hier, um sich auszuloggen</value>
@@ -157,13 +157,13 @@
     <value>Neues Passwort bestätigen</value>
   </data>
   <data name="ConsultationRoom" xml:space="preserve">
-    <value>Consultation Room</value>
+    <value>Beratungsraum</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Create</value>
+    <value>Erstellen</value>
   </data>
   <data name="CreateNew" xml:space="preserve">
-    <value>Create new</value>
+    <value>Erstelle neu</value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>Ein neues Konto erstellen.</value>
@@ -190,19 +190,19 @@
     <value>Löschen</value>
   </data>
   <data name="DeleteConfirmation" xml:space="preserve">
-    <value>Are you sure you want to delete this?</value>
+    <value>Möchten Sie dies wirklich löschen?</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>Beschreibung</value>
   </data>
   <data name="Details" xml:space="preserve">
-    <value>Details</value>
+    <value>Einzelheiten</value>
   </data>
   <data name="DetetingDataWarning" xml:space="preserve">
     <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft entfernt und kann nicht wiederhergestellt werden.</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Bearbeiten</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>E-Mail</value>
@@ -214,16 +214,16 @@
     <value>Geben sie ihre E-Mail Adresse ein.</value>
   </data>
   <data name="ErrorDeleteRoom" xml:space="preserve">
-    <value>This room cannot be deleted because it is used.</value>
+    <value>Dieser Raum kann nicht gelöscht werden, da er verwendet wird.</value>
   </data>
   <data name="Field Required" xml:space="preserve">
-    <value>The {0} is required.</value>
+    <value>Das {0} ist erforderlich.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>First name</value>
+    <value>Vorname</value>
   </data>
   <data name="Floor" xml:space="preserve">
-    <value>Floor</value>
+    <value>Umhauen</value>
   </data>
   <data name="ForgotPassword" xml:space="preserve">
     <value>Passwort vergessen?</value>
@@ -232,7 +232,7 @@
     <value>Passwortbestätigung vergessen</value>
   </data>
   <data name="Gender" xml:space="preserve">
-    <value>Gender</value>
+    <value>Geschlecht</value>
   </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>Hallo {0}!</value>
@@ -241,10 +241,10 @@
     <value>Index</value>
   </data>
   <data name="IsAvailable" xml:space="preserve">
-    <value>Is available?</value>
+    <value>Ist verfügbar?</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Last name</value>
+    <value>Nachname</value>
   </data>
   <data name="LocalAccount" xml:space="preserve">
     <value>Melden Sie sich mit einem lokalen Konto an.</value>
@@ -268,7 +268,7 @@
     <value>Ärztezentrum</value>
   </data>
   <data name="MedicalStaff" xml:space="preserve">
-    <value>Medical staff</value>
+    <value>Medezinische Angestellte</value>
   </data>
   <data name="NewEmail" xml:space="preserve">
     <value>Neue e-mail</value>
@@ -277,13 +277,13 @@
     <value>Neues Passwort</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Nein</value>
   </data>
   <data name="Number" xml:space="preserve">
     <value>Nummer</value>
   </data>
   <data name="Pacient" xml:space="preserve">
-    <value>Pacient</value>
+    <value>Der Patient</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Passwort</value>
@@ -304,7 +304,7 @@
     <value>Ihr Konto enthält personenbezogene Daten, die Sie uns mitgeteilt haben. Auf dieser Seite können Sie diese Daten herunterladen oder löschen.</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Phone number</value>
+    <value>Telefon-Nummer</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Telefonnummer</value>
@@ -344,16 +344,16 @@
     <value>E-Mail-Bestätigung erneut senden</value>
   </data>
   <data name="Room" xml:space="preserve">
-    <value>Rooms</value>
+    <value>Zimmer</value>
   </data>
   <data name="RoomExists" xml:space="preserve">
-    <value>This room already exists.</value>
+    <value>Dieses Zimmer ist bereits vorhanden.</value>
   </data>
   <data name="RoomNumber" xml:space="preserve">
-    <value>Room number</value>
+    <value>Zimmernummer</value>
   </data>
   <data name="Rooms" xml:space="preserve">
-    <value>Rooms</value>
+    <value>Zimmer</value>
   </data>
   <data name="Same Password" xml:space="preserve">
     <value>Das Kennwort und das Bestätigungskennwort stimmen nicht überein.</value>
@@ -368,13 +368,13 @@
     <value>Specialisation</value>
   </data>
   <data name="StartTime" xml:space="preserve">
-    <value>Start Time</value>
+    <value>Startzeit</value>
   </data>
   <data name="Street" xml:space="preserve">
-    <value>Street</value>
+    <value>Straße</value>
   </data>
   <data name="StreetNumber" xml:space="preserve">
-    <value>Street number</value>
+    <value>Straßennummer</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>Absenden</value>
@@ -383,7 +383,7 @@
     <value>Sie haben sich erfolgreich aus der Anwendung ausgeloggt.</value>
   </data>
   <data name="TimeSpan Field Required" xml:space="preserve">
-    <value>The {0} is required. Value format hh:mm</value>
+    <value>Das {0} ist erforderlich. Werteformat hh:mm</value>
   </data>
   <data name="UnchangedEmail" xml:space="preserve">
     <value>Ihre E-Mail ist unverändert.</value>
@@ -398,6 +398,6 @@
     <value>Willkommen</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
 </root>

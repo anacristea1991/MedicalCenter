@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AssignedDoctor" xml:space="preserve">
-    <value>Assigned doctor</value>
+    <value>担当医師</value>
   </data>
   <data name="BackToList" xml:space="preserve">
-    <value>Back to List</value>
+    <value>リストに戻る</value>
   </data>
   <data name="BirthDate" xml:space="preserve">
-    <value>BirthDate</value>
+    <value>誕生日</value>
   </data>
   <data name="ChangeAccount" xml:space="preserve">
     <value>アカウント設定を変更する</value>
@@ -139,7 +139,7 @@
     <value>メールをチェックしてパスワードをリセットしてください。</value>
   </data>
   <data name="City" xml:space="preserve">
-    <value>City</value>
+    <value>市</value>
   </data>
   <data name="ClickToLogout" xml:space="preserve">
     <value>ログアウトするには、ここをクリックしてください</value>
@@ -157,13 +157,13 @@
     <value>新しいパスワードを確認</value>
   </data>
   <data name="ConsultationRoom" xml:space="preserve">
-    <value>Consultation Room</value>
+    <value>診察室</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Create</value>
+    <value>作成</value>
   </data>
   <data name="CreateNew" xml:space="preserve">
-    <value>Create new</value>
+    <value>新しく作る</value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>新しいアカウントを作成します。</value>
@@ -190,19 +190,19 @@
     <value>消去</value>
   </data>
   <data name="DeleteConfirmation" xml:space="preserve">
-    <value>Are you sure you want to delete this?</value>
+    <value>これを削除してもよろしいですか？</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>説明</value>
   </data>
   <data name="Details" xml:space="preserve">
-    <value>Details</value>
+    <value>詳細</value>
   </data>
   <data name="DetetingDataWarning" xml:space="preserve">
     <value>このデータを削除すると、アカウントが完全に削除され、復元できなくなります。</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>編集</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Eメール</value>
@@ -214,16 +214,16 @@
     <value>メールアドレスを入力。</value>
   </data>
   <data name="ErrorDeleteRoom" xml:space="preserve">
-    <value>This room cannot be deleted because it is used.</value>
+    <value>この部屋は使用中のため削除できません。</value>
   </data>
   <data name="Field Required" xml:space="preserve">
-    <value>The {0} is required.</value>
+    <value>{0}は必須です。</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>First name</value>
+    <value>ファーストネーム</value>
   </data>
   <data name="Floor" xml:space="preserve">
-    <value>Floor</value>
+    <value>床</value>
   </data>
   <data name="ForgotPassword" xml:space="preserve">
     <value>パスワードをお忘れですか？</value>
@@ -232,19 +232,19 @@
     <value>パスワードの確認を忘れた</value>
   </data>
   <data name="Gender" xml:space="preserve">
-    <value>Gender</value>
+    <value>性別</value>
   </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>こんにちは{0}！</value>
   </data>
   <data name="Index" xml:space="preserve">
-    <value>Index</value>
+    <value>索引</value>
   </data>
   <data name="IsAvailable" xml:space="preserve">
-    <value>Is available?</value>
+    <value>利用可能です？</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Last name</value>
+    <value>苗字</value>
   </data>
   <data name="LocalAccount" xml:space="preserve">
     <value>ローカルアカウントを使用してログインします。</value>
@@ -268,7 +268,7 @@
     <value>医療センター</value>
   </data>
   <data name="MedicalStaff" xml:space="preserve">
-    <value>Medical staff</value>
+    <value>医療スタッフ</value>
   </data>
   <data name="NewEmail" xml:space="preserve">
     <value>新しいメール</value>
@@ -277,13 +277,13 @@
     <value>新しいパスワード</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>番号</value>
   </data>
   <data name="Number" xml:space="preserve">
     <value>番号</value>
   </data>
   <data name="Pacient" xml:space="preserve">
-    <value>Pacient</value>
+    <value>忍耐強い</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>パスワード</value>
@@ -304,7 +304,7 @@
     <value>あなたのアカウントにはあなたが私たちに提供した個人データが含まれています。 このページでは、そのデータをダウンロードまたは削除できます。</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Phone number</value>
+    <value>電話番号</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>電話番号</value>
@@ -344,16 +344,16 @@
     <value>確認メールを再送信する</value>
   </data>
   <data name="Room" xml:space="preserve">
-    <value>Rooms</value>
+    <value>部屋</value>
   </data>
   <data name="RoomExists" xml:space="preserve">
-    <value>This room already exists.</value>
+    <value>この部屋はすでに存在します。</value>
   </data>
   <data name="RoomNumber" xml:space="preserve">
-    <value>Room number</value>
+    <value>部屋番号</value>
   </data>
   <data name="Rooms" xml:space="preserve">
-    <value>Rooms</value>
+    <value>部屋</value>
   </data>
   <data name="Same Password" xml:space="preserve">
     <value>パスワードと確認パスワードが一致しません。</value>
@@ -365,16 +365,16 @@
     <value>確認メールを送信</value>
   </data>
   <data name="Specialisation" xml:space="preserve">
-    <value>Specialisation</value>
+    <value>専門分野</value>
   </data>
   <data name="StartTime" xml:space="preserve">
-    <value>Start Time</value>
+    <value>始まる時間</value>
   </data>
   <data name="Street" xml:space="preserve">
-    <value>Street</value>
+    <value>街</value>
   </data>
   <data name="StreetNumber" xml:space="preserve">
-    <value>Street number</value>
+    <value>街路番号</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>送信</value>
@@ -383,7 +383,7 @@
     <value>アプリケーションから正常にログアウトしました。</value>
   </data>
   <data name="TimeSpan Field Required" xml:space="preserve">
-    <value>The {0} is required. Value format hh:mm</value>
+    <value>{0}は必須です。 値の形式hh：mm</value>
   </data>
   <data name="UnchangedEmail" xml:space="preserve">
     <value>あなたのメールアドレスは変更されていません。</value>
@@ -398,6 +398,6 @@
     <value>いらっしゃいませ</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>はい</value>
   </data>
 </root>

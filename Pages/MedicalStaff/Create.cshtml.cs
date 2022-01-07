@@ -22,9 +22,9 @@ namespace MedicalCenter.Pages.MedicalStaff
 
         public IActionResult OnGet()
         {
-            var roles = from Specialisation s in Enum.GetValues(typeof(Specialisation))
+            var specialisations = from Specialisation s in Enum.GetValues(typeof(Specialisation))
                         select new { ID = (int)s, Name = s.ToString() };
-            ViewData["Specialisation"] = new SelectList(roles, "ID", "Name");
+            ViewData["Specialisation"] = new SelectList(specialisations, "ID", "Name");
 
             var rooms = from MedicalCenter.Models.Room r in _context.Room.Where(r => r.IsAvailable).ToList()
                         select new { ID = (int)r.Id, Name = string.Format("{0}.{1}",r.Floor,r.RoomNumber) };

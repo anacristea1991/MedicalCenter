@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AssignedDoctor" xml:space="preserve">
-    <value>Assigned doctor</value>
+    <value>طبيب معين</value>
   </data>
   <data name="BackToList" xml:space="preserve">
-    <value>Back to List</value>
+    <value>العودة للقائمة</value>
   </data>
   <data name="BirthDate" xml:space="preserve">
-    <value>BirthDate</value>
+    <value>تاريخ الولادة</value>
   </data>
   <data name="ChangeAccount" xml:space="preserve">
     <value>تغيير إعدادات حسابك</value>
@@ -139,7 +139,7 @@
     <value>يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك.</value>
   </data>
   <data name="City" xml:space="preserve">
-    <value>City</value>
+    <value>مدينة</value>
   </data>
   <data name="ClickToLogout" xml:space="preserve">
     <value>اضغط هنا للتسجيل الخروج</value>
@@ -157,13 +157,13 @@
     <value>تأكيد كلمة المرور الجديدة</value>
   </data>
   <data name="ConsultationRoom" xml:space="preserve">
-    <value>Consultation Room</value>
+    <value>غرفة التشاور</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Create</value>
+    <value>يخلق</value>
   </data>
   <data name="CreateNew" xml:space="preserve">
-    <value>Create new</value>
+    <value>خلق جديد إبداع جديد</value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>انشاء حساب جديد.</value>
@@ -190,19 +190,19 @@
     <value>حذف</value>
   </data>
   <data name="DeleteConfirmation" xml:space="preserve">
-    <value>Are you sure you want to delete this?</value>
+    <value>هل أنت متأكد أنك تريد حذف هذا؟</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>وصف</value>
   </data>
   <data name="Details" xml:space="preserve">
-    <value>Details</value>
+    <value>تفاصيل</value>
   </data>
   <data name="DetetingDataWarning" xml:space="preserve">
     <value>سيؤدي حذف هذه البيانات إلى إزالة حسابك نهائيًا ، ولا يمكن استرداد ذلك.</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>تعديل</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>بريد الالكتروني</value>
@@ -214,16 +214,16 @@
     <value>أدخل بريدك الإلكتروني.</value>
   </data>
   <data name="ErrorDeleteRoom" xml:space="preserve">
-    <value>This room cannot be deleted because it is used.</value>
+    <value>لا يمكن حذف هذه الغرفة لأنها مستخدمة.</value>
   </data>
   <data name="Field Required" xml:space="preserve">
-    <value>The {0} is required.</value>
+    <value>{0} مطلوب.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>First name</value>
+    <value>الاسم الاول</value>
   </data>
   <data name="Floor" xml:space="preserve">
-    <value>Floor</value>
+    <value>الأرض</value>
   </data>
   <data name="ForgotPassword" xml:space="preserve">
     <value>نسيت رقمك السري؟</value>
@@ -232,19 +232,19 @@
     <value>نسيت كلمة المرور</value>
   </data>
   <data name="Gender" xml:space="preserve">
-    <value>Gender</value>
+    <value>جنس تذكير أو تأنيث</value>
   </data>
   <data name="HelloMsg" xml:space="preserve">
     <value>مرحبًا {0}!</value>
   </data>
   <data name="Index" xml:space="preserve">
-    <value>Index</value>
+    <value>فهرس</value>
   </data>
   <data name="IsAvailable" xml:space="preserve">
-    <value>Is available?</value>
+    <value>متاح؟</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Last name</value>
+    <value>الكنية</value>
   </data>
   <data name="LocalAccount" xml:space="preserve">
     <value>استخدم حساب محلي لتسجيل الدخول.</value>
@@ -268,7 +268,7 @@
     <value>مركز طبي</value>
   </data>
   <data name="MedicalStaff" xml:space="preserve">
-    <value>Medical staff</value>
+    <value>طاقم طبي</value>
   </data>
   <data name="NewEmail" xml:space="preserve">
     <value>بريد إلكتروني جديد</value>
@@ -277,13 +277,13 @@
     <value>كلمة السر الجديدة</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>رقم</value>
   </data>
   <data name="Number" xml:space="preserve">
     <value>عدد</value>
   </data>
   <data name="Pacient" xml:space="preserve">
-    <value>Pacient</value>
+    <value>هادئ</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>كلمة المرور</value>
@@ -304,7 +304,7 @@
     <value>يحتوي حسابك على بيانات شخصية قدمتها لنا. تسمح لك هذه الصفحة بتنزيل هذه البيانات أو حذفها.</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Phone number</value>
+    <value>رقم التليفون</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>رقم التليفون</value>
@@ -344,16 +344,16 @@
     <value>إعادة إرسال تأكيد البريد الإلكتروني</value>
   </data>
   <data name="Room" xml:space="preserve">
-    <value>Room</value>
+    <value>غرفة</value>
   </data>
   <data name="RoomExists" xml:space="preserve">
-    <value>This room already exists.</value>
+    <value>هذه الغرفة موجودة بالفعل.</value>
   </data>
   <data name="RoomNumber" xml:space="preserve">
-    <value>Room number</value>
+    <value>رقم الغرفة</value>
   </data>
   <data name="Rooms" xml:space="preserve">
-    <value>Rooms</value>
+    <value>غرف</value>
   </data>
   <data name="Same Password" xml:space="preserve">
     <value>كلمة المرور وكلمة المرور التأكيدية غير متطابقتين.</value>
@@ -365,16 +365,16 @@
     <value>ارسل ايميل التفعيل</value>
   </data>
   <data name="Specialisation" xml:space="preserve">
-    <value>Specialisation</value>
+    <value>تخصص</value>
   </data>
   <data name="StartTime" xml:space="preserve">
-    <value>Start Time</value>
+    <value>وقت البدء</value>
   </data>
   <data name="Street" xml:space="preserve">
-    <value>Street</value>
+    <value>شارع</value>
   </data>
   <data name="StreetNumber" xml:space="preserve">
-    <value>Street number</value>
+    <value>رقم الشارع</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>إرسال</value>
@@ -383,7 +383,7 @@
     <value>لقد قمت بتسجيل الخروج بنجاح من التطبيق.</value>
   </data>
   <data name="TimeSpan Field Required" xml:space="preserve">
-    <value>The {0} is required. Value format hh:mm</value>
+    <value>{0} مطلوب. تنسيق القيمة hh: mm</value>
   </data>
   <data name="UnchangedEmail" xml:space="preserve">
     <value>بريدك الإلكتروني لم يتغير.</value>
@@ -398,6 +398,6 @@
     <value>مرحبا</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>نعم</value>
   </data>
 </root>
