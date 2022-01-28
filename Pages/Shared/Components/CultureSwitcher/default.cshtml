@@ -2,7 +2,7 @@
 @{ 
     var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
 }
-<div>
+<div style="margin-top:8px;">
     <form id="culture-switcher" asp-route-returnUrl="@returnUrl" asp-area="" asp-page="/Index">
         <select name="culture" id="culture-options">
             <option></option>
